@@ -1,0 +1,101 @@
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+ $include-column-box-sizing: true !default;
+
+
+// Configuration
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+@import "bootstrap/vendor/rfs";
+ 
+@import "bootstrap/root";
+
+@import "bootstrap/containers";
+@import "bootstrap/grid";
+ 
+ @import "bootstrap/utilities";
+ // Only use the utilities we need
+ // stylelint-disable-next-line scss/dollar-variable-default
+ $utilities: map-get-multiple(
+   $utilities,
+   (
+     "display",
+     "order",
+     "flex",
+     "flex-direction",
+     "flex-grow",
+     "flex-shrink",
+     "flex-wrap",
+     "justify-content",
+     "align-items",
+     "align-content",
+     "align-self",
+     "margin",
+     "margin-x",
+     "margin-y",
+     "margin-top",
+     "margin-end",
+     "margin-bottom",
+     "margin-start",
+     "negative-margin",
+     "negative-margin-x",
+     "negative-margin-y",
+     "negative-margin-top",
+     "negative-margin-end",
+     "negative-margin-bottom",
+     "negative-margin-start",
+     "padding",
+     "padding-x",
+     "padding-y",
+     "padding-top",
+     "padding-end",
+     "padding-bottom",
+     "padding-start",
+   )
+ );
+ 
+// Layout & components
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/containers";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/accordion";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/toasts";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/spinners";
+@import "bootstrap/offcanvas";
+@import "bootstrap/placeholders";
+
+// Helpers
+@import "bootstrap/helpers";
+
+// Utilities
+@import "bootstrap/utilities/api";
